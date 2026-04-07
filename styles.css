@@ -1,0 +1,286 @@
+:root {
+  --bg: #0b1020;
+  --panel: #111936;
+  --text: #eaf0ff;
+  --muted: #b9c5ea;
+  --accent: #5eead4;
+  --accent-2: #60a5fa;
+  --stroke: #2a3765;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 20% 0%, #16244d 0%, var(--bg) 40%);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background: rgb(11 16 32 / 80%);
+  border-bottom: 1px solid var(--stroke);
+  z-index: 20;
+}
+
+.nav-wrap,
+.brand,
+nav,
+.cta-row,
+.metrics,
+.pill-row,
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.nav-wrap {
+  justify-content: space-between;
+  padding: 0.9rem 0;
+  gap: 1rem;
+}
+
+.logo {
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 0.7rem;
+  background: linear-gradient(130deg, var(--accent), var(--accent-2));
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: #031020;
+  margin-right: 0.6rem;
+}
+
+.brand-name {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.brand-tagline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+nav {
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.eyebrow {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+  margin-bottom: 0.6rem;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin-top: 0;
+}
+
+.hero p,
+.lead {
+  color: var(--muted);
+}
+
+.btn {
+  border: 1px solid transparent;
+  border-radius: 0.7rem;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #041224;
+}
+
+.ghost {
+  background: transparent;
+  border-color: var(--stroke);
+  color: var(--text);
+}
+
+.subtle {
+  background: #223162;
+  color: var(--text);
+}
+
+.cta-row,
+.controls {
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.metrics {
+  list-style: none;
+  margin: 1.2rem 0 0;
+  padding: 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+  color: var(--muted);
+}
+
+.phone-mockup,
+.card,
+.match-card,
+.timeline article,
+.contact,
+.mini-card {
+  border: 1px solid var(--stroke);
+  border-radius: 1rem;
+  background: rgb(17 25 54 / 70%);
+}
+
+.phone-mockup {
+  padding: 1rem;
+}
+
+.phone-screen {
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid #32457f;
+  background: linear-gradient(180deg, #162454, #0e1a3d);
+}
+
+.mini-title {
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin: 0;
+}
+
+.mini-card {
+  padding: 0.7rem;
+  margin-top: 0.7rem;
+}
+
+.mini-card p {
+  margin: 0.1rem 0;
+}
+
+.section {
+  padding: 3.2rem 0;
+}
+
+.alt {
+  background: rgb(5 10 24 / 45%);
+  border-top: 1px solid var(--stroke);
+  border-bottom: 1px solid var(--stroke);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem;
+}
+
+.pill-row {
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.pill {
+  border: 1px solid #3552a1;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.demo-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.match-card {
+  min-height: 260px;
+  padding: 1rem;
+}
+
+.status {
+  margin-top: 0.8rem;
+  color: var(--accent);
+  min-height: 1.5rem;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.timeline article {
+  padding: 1rem;
+}
+
+.matrix {
+  width: min(100%, 780px);
+  border-radius: 0.8rem;
+  border: 1px solid var(--stroke);
+}
+
+footer {
+  border-top: 1px solid var(--stroke);
+  padding: 1.2rem 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 920px) {
+  .hero,
+  .grid-3,
+  .demo-wrap,
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    display: none;
+  }
+}
