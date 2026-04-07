@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoAuthor – Where Research Meets Collaboration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="logo">C</span>
+          <div>
+            <p class="brand-name">CoAuthor</p>
+            <p class="brand-tagline">Where Research Meets Collaboration</p>
+          </div>
+        </div>
+        <nav>
+          <a href="#problema">Problema</a>
+          <a href="#soluzione">Soluzione</a>
+          <a href="#funzionalita">Funzionalità</a>
+          <a href="#market">Mercato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Piattaforma web + mobile per la ricerca</p>
+          <h1>CoAuthor – Where Research Meets Collaboration</h1>
+          <p>
+            Trasformiamo affinità tematiche in collaborazioni concrete tra ricercatori,
+            dottorandi, post-doc e istituzioni attraverso matching intelligente,
+            networking attivo e strumenti operativi per eventi scientifici.
+          </p>
+          <div class="cta-row">
+            <button class="btn primary" data-scroll="#demo">Prova il matching</button>
+            <button class="btn ghost" data-scroll="#contact">Richiedi demo istituzionale</button>
+          </div>
+          <ul class="metrics">
+            <li><strong>9M+</strong> ricercatori potenziali nel mondo</li>
+            <li><strong>NLP</strong> semantico oltre keyword matching</li>
+            <li><strong>API-first</strong> pronto per ORCID/Scopus/Scholar</li>
+          </ul>
+        </div>
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <p class="mini-title">Suggerimento del giorno</p>
+            <h3>Profili compatibili al 92%</h3>
+            <p class="muted">
+              AI Ethics • Explainable ML • Public Policy
+            </p>
+            <div class="mini-card">
+              <p><strong>Dr. Elena Rossi</strong></p>
+              <p>Politecnico di Milano</p>
+            </div>
+            <div class="mini-card">
+              <p><strong>Dr. Amir Khan</strong></p>
+              <p>University of Copenhagen</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="problema" class="section alt">
+        <div class="container">
+          <h2>Il problema che CoAuthor risolve</h2>
+          <div class="grid-3">
+            <article class="card">
+              <h3>Visibilità ≠ collaborazione</h3>
+              <p>
+                Le piattaforme esistenti privilegiano branding personale e condivisione
+                passiva, senza workflow reali di co-progettazione scientifica.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Matching frammentato</h3>
+              <p>
+                Le connessioni avvengono per keyword rigide, mailing list o incontri casuali,
+                con elevato costo di tempo per trovare il partner giusto.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Opportunità disperse</h3>
+              <p>
+                Call for papers, bandi e conferenze sono distribuiti su canali separati,
+                rendendo difficile costruire continuità e follow-up.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="soluzione" class="section">
+        <div class="container">
+          <h2>La soluzione: infrastruttura dell’incontro scientifico</h2>
+          <p class="lead">
+            CoAuthor unisce in un unico ecosistema: matching intelligente tra ricercatori,
+            chat post-match, feed personalizzato di opportunità accademiche e strumenti per
+            la gestione di eventi scientifici.
+          </p>
+          <div class="pill-row">
+            <span class="pill">Matching NLP semantico</span>
+            <span class="pill">Swipe UX mobile-first</span>
+            <span class="pill">Chat riservata</span>
+            <span class="pill">Call for co-authors</span>
+            <span class="pill">Conference management</span>
+            <span class="pill">Notifiche smart</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="demo" class="section alt">
+        <div class="container demo-wrap">
+          <div>
+            <h2>Demo interattiva del matching</h2>
+            <p>
+              Simula l’esperienza “swipe” per approvare o saltare un potenziale co-autore.
+              Quando trovi un match reciproco, si attiva la chat.
+            </p>
+            <div class="controls">
+              <button id="skipBtn" class="btn ghost">Salta</button>
+              <button id="likeBtn" class="btn primary">Matcha</button>
+              <button id="resetBtn" class="btn subtle">Ricomincia</button>
+            </div>
+            <p id="demoStatus" class="status"></p>
+          </div>
+          <div class="match-card" id="matchCard" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="funzionalita" class="section">
+        <div class="container">
+          <h2>Funzionalità chiave in sviluppo</h2>
+          <div class="timeline">
+            <article>
+              <h3>Fase 1</h3>
+              <p>Profilo ricercatore + matching semantico + chat riservata.</p>
+            </article>
+            <article>
+              <h3>Fase 2</h3>
+              <p>Feed personalizzato su conferenze, call for papers e bandi.</p>
+            </article>
+            <article>
+              <h3>Fase 3</h3>
+              <p>Strumenti evento: application/review, iscrizioni, programma e networking.</p>
+            </article>
+            <article>
+              <h3>Fase 4</h3>
+              <p>Integrazione ORCID, Scopus, Google Scholar e repository open access.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="market" class="section alt">
+        <div class="container">
+          <h2>Posizionamento competitivo</h2>
+          <p>
+            CoAuthor presidia il quadrante ad alta collaborazione attiva e alta integrazione,
+            superando l’attuale frammentazione tra social accademici e software evento.
+          </p>
+          <img
+            src="assets/competitive-matrix.svg"
+            alt="Matrice di posizionamento competitivo di CoAuthor"
+            class="matrix"
+          />
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact">
+          <h2>Vuoi lanciare CoAuthor nella tua università?</h2>
+          <p>
+            Scrivi a <a href="mailto:partnership@coauthor.app">partnership@coauthor.app</a>
+            per partnership tecnologiche, produttive e commerciali.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>© 2026 CoAuthor · Designed for global academic collaboration.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
